@@ -66,9 +66,8 @@ const Benefit = () => {
       <div className="title">Benefits</div>
       <div className="benefit-list">{renderListBenefit()}</div>
       <Swiper
-        slidesPerView={2}
-        spaceBetween={24}
-        centeredSlides={true}
+        slidesPerView={3}
+        spaceBetween={20}
         loop={true}
         pagination={{
           type: 'fraction',
@@ -84,8 +83,11 @@ const Benefit = () => {
           320: {
             slidesPerView: 1,
           },
-          768: {
+          600: {
             slidesPerView: 2,
+          },
+          850: {
+            slidesPerView: 3,
           },
         }}
       >

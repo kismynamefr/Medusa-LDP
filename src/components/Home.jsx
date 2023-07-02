@@ -5,7 +5,7 @@ import bg from '../assets/1.png'
 
 const Home = () => {
   return (
-    <div className="home relative">
+    <div id="home" className="home relative">
       <video autoPlay loop>
         <source src={medusa} type="video/mp4" />
       </video>

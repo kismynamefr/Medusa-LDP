@@ -4,7 +4,10 @@ import about2 from '../assets/about2.png'
 
 const About = () => {
   return (
-    <div id="about" className="about relative flex justify-center items-center">
+    <div
+      id="about"
+      className="about container-wrapper relative flex justify-center items-center"
+    >
       <div className="absolute top-0 right-4 about-image">
         <img src={about1} alt="about" className="h-screen w-auto" />
       </div>

@@ -55,7 +55,6 @@ h4 {
     justify-content: center;
     align-items: center;
     position: relative;
-    background: var(--bg);
 }
 
 .title {
@@ -85,6 +84,7 @@ h4 {
 
 .loading {
     background: var(--bg);
+    z-index: 100000;
 
     &-container {
         width: 400px;
@@ -132,10 +132,21 @@ h4 {
         position: absolute;
         left: 0;
         top: 0;
+        animation: toBottom 5s linear forwards;
 
         img {
             width: 600px;
             height: auto;
+        }
+
+        @keyframes toBottom {
+            from {
+                top: -50px;
+            }
+
+            to {
+                top: 0;
+            }
         }
     }
 
@@ -309,7 +320,6 @@ h4 {
 // ================== About ====================
 .about {
     height: 100vh;
-    background: var(--bg);
 
     &-container {
 
@@ -426,6 +436,19 @@ h4 {
 
         &-list-tablet {
             display: flex !important;
+            max-width: 850px;
+        }
+    }
+
+    @media (max-width: 849px) {
+        .benefit-list-tablet {
+            max-width: 580px;
+        }
+    }
+
+    @media (max-width: 599px) {
+        .benefit-list-tablet {
+            max-width: 285px;
         }
     }
 
@@ -439,7 +462,7 @@ h4 {
         transition: var(--smooth);
 
         &:hover {
-            scale: 1.05;
+            scale: 0.95;
             box-shadow: 1px 2px 12px var(--yellow-light);
         }
 
@@ -461,12 +484,24 @@ h4 {
 
     .swiper {
         width: 100%;
-        height: 90%;
     }
 
-    .swiper-slide {
-        max-width: 300px;
-        height: 520px;
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: var(--white);
+    }
+
+    .swiper-button-prev {
+        left: 0;
+    }
+
+    .swiper-button-next {
+        right: 0;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-size: 20px;
     }
 }
 
@@ -493,7 +528,6 @@ h4 {
     transform: translateY(-50%);
     left: 20px;
     z-index: 100;
-
     display: flex;
     gap: 16px;
     flex-direction: column;
