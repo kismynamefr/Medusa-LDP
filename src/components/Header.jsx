@@ -87,9 +87,10 @@ function Modal({ shown, close }) {
 
 const Header = () => {
   const [open, setOpen] = useState(false)
+
   return (
     <div className="header flex justify-end items-center px-8">
-      <div className="header-logo">
+      <div className="header-logo pointer-events-none">
         <img src={logo} alt="logo" />
       </div>
       <div className="flex items-center justify-between w-full header-container">

@@ -2,7 +2,7 @@ import React from 'react'
 import load from '../assets/loading.png'
 import btn from '../assets/btn-md.png'
 
-const Loading = () => {
+const Loading = ({ setIsLoading }) => {
   return (
     <div className="loading fixed inset-0">
       <div className="flex justify-center items-center flex-col w-full h-full">
@@ -13,7 +13,7 @@ const Loading = () => {
             <h4 className="text-xl mt-2">- The Queen of Meme -</h4>
           </div>
         </div>
-        <div className="mt-5 w-52 btn">
+        <div className="mt-5 w-52 btn" onClick={() => setIsLoading(false)}>
           <img src={btn} alt="btn" />
         </div>
       </div>

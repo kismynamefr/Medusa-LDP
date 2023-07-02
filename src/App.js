@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import Header from './components/Header'
 import Home from './components/Home'
 import Benefit from './components/Benefit'
@@ -6,62 +7,25 @@ import Loading from './components/Loading'
 import Token from './components/Token'
 import Roadmap from './components/Roadmap'
 import Panigation from './components/Panigation'
-import bg from './assets/bg.png'
-import {
-  Fullpage,
-  FullPageSections,
-  FullpageSection,
-  FullpageNavigation,
-} from '@ap.cx/react-fullpage'
-import { Parallax } from 'react-parallax'
+import { useScroll, useSpring } from "framer-motion"
+import { motion } from 'framer-motion'
 
 function App() {
-  const stylePagination = {
-    paddingRight: 0,
-    paddingLeft: '1rem',
-    left: 0,
-    right: 'unset',
-    '& > div > div': {
-      background: 'rgba(243, 220, 194, 1)',
-    },
-  }
+  const [isLoading, setIsLoading] = useState(true)
+  const { scrollYProgress } = useScroll()
+  const scaleX = useSpring(scrollYProgress)
+
   return (
-    <div className="wrapper">
-      {/* <Loading /> */}
-      {/* <Panigation /> */}
+    // isLoading ? <Loading setIsLoading={setIsLoading}/> :
+    <motion.div className="wrapper" style={{ scaleX }}>
+      <Panigation />
       <Header />
-      <Fullpage>
-        <FullpageNavigation
-          className="pagination-custome"
-          style={stylePagination}
-        />
-        <FullPageSections>
-          <FullpageSection>
-            <Home />
-          </FullpageSection>
-          <FullpageSection>
-            <Parallax strength={300} blur={{ min: -5, max: 10 }} bgImage={bg}>
-              <About />
-            </Parallax>
-          </FullpageSection>
-          <FullpageSection>
-            <Parallax strength={300} blur={{ min: -5, max: 10 }} bgImage={bg}>
-              <Token />
-            </Parallax>
-          </FullpageSection>
-          <FullpageSection>
-            <Parallax strength={300} blur={{ min: -5, max: 10 }} bgImage={bg}>
-              <Benefit />
-            </Parallax>
-          </FullpageSection>
-          <FullpageSection>
-            <Parallax strength={300} blur={{ min: -5, max: 10 }} bgImage={bg}>
-              <Roadmap />
-            </Parallax>
-          </FullpageSection>
-        </FullPageSections>
-      </Fullpage>
-    </div>
+      <Home />
+      <About />
+      <Token />
+      <Benefit />
+      <Roadmap />
+    </motion.div>
   )
 }
 
