@@ -38,11 +38,11 @@ const renderListNav = () => {
 const listSocial = [
   {
     image: facebook,
-    link: '#',
+    link: 'https://t.me/medusatoken',
   },
   {
     image: twitter,
-    link: '#',
+    link: 'https://twitter.com/Medusatokentw',
   },
 ]
 
