@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.abf6ac71.css",
+    "main.js": "/static/js/main.5ea2df3e.js",
+    "static/media/video.mp4": "/static/media/video.5244afd607ecffac0884.mp4",
+    "static/media/1.png": "/static/media/1.5a9f288029ad04655f37.png",
+    "static/media/token.png": "/static/media/token.d89d8c31a9fc828d0815.png",
+    "static/media/bg.png": "/static/media/bg.8062f4d1bc61d3c8584d.png",
+    "static/media/about2.png": "/static/media/about2.61acb2312a23adb8cd55.png",
+    "static/media/benefit2.png": "/static/media/benefit2.a6b42f1ad1e2d7cb1b3a.png",
+    "static/media/benefit3.png": "/static/media/benefit3.a7ddb09e7da86c3854d0.png",
+    "static/media/benefit1.png": "/static/media/benefit1.2c815a234434234ad630.png",
+    "static/media/benefit4.png": "/static/media/benefit4.5349ff822c5c0d72c1dd.png",
+    "static/media/roadmap.png": "/static/media/roadmap.fad6d67886f1e42b9cbc.png",
+    "static/media/about1.png": "/static/media/about1.8c81e66ec53e30043741.png",
+    "static/media/logo.png": "/static/media/logo.c08438d80ce74740d678.png",
+    "static/media/loading.png": "/static/media/loading.ad66013a3fa28c153a1e.png",
+    "static/media/btn-md.png": "/static/media/btn-md.ce6569046572ea0dcd5b.png",
+    "static/media/token3.png": "/static/media/token3.1cc44c5281ad32577463.png",
+    "static/media/btn-sm.png": "/static/media/btn-sm.9671833a7e4621b606e1.png",
+    "static/media/token2.png": "/static/media/token2.53b2087486b34dbee3a9.png",
+    "static/media/token1.png": "/static/media/token1.299a8634f551fe89035d.png",
+    "static/media/token4.png": "/static/media/token4.5807a882fcb21f7151e3.png",
+    "static/media/facebook.png": "/static/media/facebook.3a410e223695c9e97a27.png",
+    "static/media/twitter.png": "/static/media/twitter.f1cd8fdb82ecd8623202.png",
+    "static/media/menu.svg": "/static/media/menu.95210f433d177b84753c43779099a6cd.svg",
+    "static/media/menu2.svg": "/static/media/menu2.2a0ee74e96367ab74b8034e0a99cf40c.svg",
+    "static/media/menu1.svg": "/static/media/menu1.67d2268a7442d4475056e2400b452aa2.svg",
+    "index.html": "/index.html",
+    "static/media/x.svg": "/static/media/x.9e1d10a160941f33ad5609ca01366584.svg",
+    "main.abf6ac71.css.map": "/static/css/main.abf6ac71.css.map",
+    "main.5ea2df3e.js.map": "/static/js/main.5ea2df3e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abf6ac71.css",
+    "static/js/main.5ea2df3e.js"
+  ]
+}
